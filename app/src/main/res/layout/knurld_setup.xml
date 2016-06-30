@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/setEnrollment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordEnrollment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:onClick="setKnurldEnrollment"
+        android:text="Set Enrollment" />
+
+    <Button
+        android:id="@+id/updateEnrollment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recordEnrollment"
+        android:layout_alignStart="@+id/recordEnrollment"
+        android:layout_below="@+id/recordEnrollment"
+        android:layout_marginTop="54dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="updateKnurldEnrollment"
+        android:text="Finish Enrollment" />
+
+    <Button
+        android:id="@+id/recordEnrollment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="recordEnrollment"
+        android:text="Record Enrollment" />
+
+    <TextView
+        android:id="@+id/enrollmentDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordEnrollment"
+        android:layout_centerHorizontal="true"
+        android:text="Tap here to record your enrollment phrases" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setEnrollment"
+        android:layout_centerHorizontal="true"
+        android:text="Tap here to start the enrollment process" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recordEnrollment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Tap here to finish the enrollment process" />
+
+</RelativeLayout>
